@@ -8,15 +8,15 @@
 /**
  * struct fmt - Struct for formatting data.
  * @sym: *sym: Pointer to a character string.
- * @fn: func pointer to a function that takes a va_list as an arg
-*/
- typedef struct fct
+ * @fn: func pointer to a function that takes a va_list as an arg.
+ */
+typedef struct fct
 {
 	char *ict;
-	int (*fn)(va_list)
-}fct_t
+	int (*fn)(va_list);
+}fct_t;
 
-int_printf(const char *format, ...);
+int _printf(const char *format, ...);
 int (*get_f(const char *format))(va_list);
 int print_char(va_list ls);
 int print_str(va_list ls);
