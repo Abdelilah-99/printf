@@ -12,6 +12,8 @@ int (*get_f(const char *format))(va_list)
 		{"c", print_char},
 		{"s", print_str},
 		{"%", print_perc},
+                {"i", print_digit},
+		{"d", print_digit},
 		{NULL, NULL}};
 
 	for (; fct_types[i].ict; i++)
