@@ -1,6 +1,6 @@
 #include "printf.h"
 /**
- * _printf - function kadiir nefs service d printf
+ * _printf - function kadiir nefs service d printf ghi hna %c %s %%
  * @format: hnaa ghady nab9a retrive les char
  * Return: count or -1
  */
