@@ -1,7 +1,9 @@
 #include "main.h"
 /**
- * get_t - Retrieve the printing function corresponding to a given format specifier 
- * @format: The format specifier 
+ * get_f - Retrieve the printing function corresponding
+ * to a given format specifier
+ * @format: The format specifier
+ * Return: NULL or the func
 */
 int (*get_f(const char *format))(va_list)
 {
