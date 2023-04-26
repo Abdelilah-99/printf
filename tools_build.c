@@ -2,7 +2,7 @@
 /**
  * func_itoa - ghady nrajja3 int l str
  * @n: nmbr
- * @str: pointer andiir fiih n
+ * @s: pointer andiir fiih n
 */
 void func_itoa(long n, char s[])
 {
@@ -20,10 +20,8 @@ void func_itoa(long n, char s[])
 	_rev(s);
 }
 /**
- * rev - biin nfutu 3la itoa ayrja3 dak chii ma9luub
- * @str: string
- * @len: len d str
- * 
+ * _rev - biin nfutu 3la itoa ayrja3 dak chii ma9luub
+ * @s: string
 */
 void _rev(char s[])
 {
@@ -40,7 +38,7 @@ void _rev(char s[])
 	}
 }
 /**
- * len - na7ssab str
+ * _len - na7ssab str
  * @str: str
  * Return: len
 */
@@ -53,4 +51,3 @@ int _len(char *str)
 
 	return (l);
 }
-

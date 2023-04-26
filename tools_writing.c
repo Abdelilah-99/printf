@@ -11,14 +11,15 @@ int _putchar(char c)
 }
 /**
  * _puts - print
- * @s: str
+ * @str: str
  * Return: i
 */
-int _puts(char *s)
+int _puts(char *str)
 {
 	int i = 0;
 
-	for (; s[i]; i++)
-		putchar(s[i]);
-	return(i);	
+	for (; str[i]; i++)
+		_putchar(str[i]);
+
+	return (i);
 }

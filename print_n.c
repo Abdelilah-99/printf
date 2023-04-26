@@ -8,6 +8,7 @@ int print_digit(va_list ls)
 {
 	int n = va_arg(ls, int), l, i, f_w = 0;
 	char buffer[50];
+
 	func_itoa(n, buffer);
 	l = len(buffer);
 	if (f_w > l)
@@ -15,11 +16,11 @@ int print_digit(va_list ls)
 		for (i = 0; i < f_w - l; i++)
 			putchar(' ');
 	}
-	return(_puts(buffer));
+	return (_puts(buffer));
 }
 /**
  * print_unsigned - prints unsigned integers from a va_list
- * @list: va_list of unsigned integers to be printed
+ * @ls: va_list of unsigned integers to be printed
  * Return: number of characters printed
  */
 int print_unsigned(va_list ls)
