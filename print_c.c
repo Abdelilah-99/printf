@@ -41,4 +41,3 @@ int print_perc(va_list ls)
 	_putchar('%');
 	return (1);
 }
-
