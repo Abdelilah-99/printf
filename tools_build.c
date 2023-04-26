@@ -25,29 +25,31 @@ void func_itoa(long n, char s[])
 */
 void _rev(char s[])
 {
-	unsigned int i = 0, l = 0;
-	char t;
+{
+	unsigned int i = 0, len = 0;
+	char temp;
 
-	l = _len(s);
+	len = _len(s);
 
-	for (; i < l / 2; i++)
+	for (; i < len / 2; i++)
 	{
-		t = s[i];
-		s[i] = s[l - i - 1];
-		s[l - i - 1] = t;
+		temp = s[i];
+		s[i] = s[len - i - 1];
+		s[len - i - 1] = temp;
 	}
+}
 }
 /**
  * _len - na7ssab str
- * @str: str
+ * @s: str
  * Return: len
 */
-int _len(char *str)
+unsigned int _len(char *s)
 {
-	unsigned int l = 0;
+	unsigned int len = 0;
 
-	while (str[l])
-		l++;
+	while (s[len])
+		len++;
 
-	return (l);
+	return (len);
 }

@@ -21,7 +21,7 @@ int _printf(const char *format, ...);
 int (*get_f(const char *format))(va_list);
 void _rev(char s[]);
 void func_itoa(long n,char str[]);
-int _len(char *str);
+unsigned int _len(char *s);
 int _puts(char *str);
 int print_digit(va_list ls);
 int print_char(va_list ls);
