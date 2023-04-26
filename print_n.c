@@ -10,7 +10,7 @@ int print_digit(va_list ls)
 	char buffer[50];
 
 	func_itoa(n, buffer);
-	l = len(buffer);
+	l = _len(buffer);
 	if (f_w > l)
 	{
 		for (i = 0; i < f_w - l; i++)
