@@ -6,7 +6,7 @@
 #include <unistd.h>
 
 /**
- * struct fct - Struct for formatting data.
+ * struct fct - Struct for formatting data formatting .
  * @ict: *sym: Pointer to a character string.
  * @fn: func pointer to a function that takes a va_list as an arg.
  *
